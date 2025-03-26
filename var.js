@@ -14,6 +14,8 @@ if (true){
 // const is a block scope and it cant be redeclared and reassigned 
 const f=3;
 console.log(f);
+
+// but it can be possible with objects and array
 const person = {
     name: 'Mayank',
     age: 21
@@ -21,5 +23,7 @@ const person = {
 console.log(person.name);  
 person.name = 'Love';
 console.log(person.name);  
+
+
 
 
