@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifying html dom elements</title>
+</head>
+<body>
+
+    <div id="innerHtml">This is about innerHTML</div>
+    <div id="textContent">Original text <span>(Hidden Text)</span></div>
+    <div id="innerText">Original Text <span>(Hidden Text)</span></div>
+    <div id="outerHtml">Original Text</div>
+
+    <script>
+        alert("this is all about modifying html dom")
+        document.getElementById("innerHtml").innerHTML = "<b>Hello, innerHTML!</b>";  
+        document.getElementById("textContent").textContent = "<b>Hello, textContent!</b>";
+        document.getElementById("innerText").innerText = "<b>Hello, innerText!</b>";  
+        document.getElementById("outerHtml").outerHTML = "<div id='outerHtmlUpdated'><i>Hello, outerHTML!</i></div>";
+    </script>
+
+</body>
+</html>
