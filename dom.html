@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <h1 id="title"> Welcome to JS</h1>
+    <h2 class="js">JS lecture 1</h2>
+    <h2 class="js1">JS lecture 2</h2>
+
+    <p>Document object model </p>
+    <p>Browser object model</p>
+    <p> Manipulation</p>
+    <script> 
+        let element1 = document.getElementById("title");
+        element1.style.backgroundColor="red";
+        let element2 = document.getElementsByClassName("js");
+        element2[0].style.backgroundColor = "blue";
+        let element3 = document.getElementsByClassName("js1");
+        element3[0].style.backgroundColor="yellow";
+        let paragraph = document.getElementsByTagName('p');
+        paragraph[0].style.backgroundColor="blue";
+        paragraph[1].style.backgroundColor = "green";
+        paragraph[2].style.backgroundColor = "brown";
+    </script>
+</body>
+</html>
