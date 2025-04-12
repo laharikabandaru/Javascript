@@ -4,4 +4,4 @@ const promise3 = new Promise((resolve,reject)=>{setTimeout(()=>resolve('third'),
 Promise.all([promise1,promise2,promise3]).then((value) =>{console.log(value)}) .catch((error) => {console.log(error)});
 Promise.any([promise1,promise2,promise3]).then((value) =>{console.log(value)}) .catch((error) => {console.log(error)});
 Promise.allSettled([promise1,promise2,promise3]).then((value) =>{console.log(value)}) .catch((error) => {console.log(error)});
-Promise.race([promise1,promise2,promise3]).then((value) =>{console.log(value)}) .catch((error) => {console.log(error)});
+Promise.race([promise1,promise2,promise3]).then((value) =>{console.log(value)}) .catch((error) => {console.log(error)});                    

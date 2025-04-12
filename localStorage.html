@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Example</title>
+</head>
+<body>
+    <h1> Local Storage Example</h1>
+    <label for="dataInput">Please Enter your name: </label>
+    <input type="text" id = "dataInput" placeholder="enter name....">
+    <button id="saveButton">Save to Local Storage</button>
+    <button id="getButton"> Get from the local storage</button>
+    <button id="clearButton"> Remove Item</button>
+    <p id="output"></p>
+    <script>
+        const dataInput = document.getElementById("dataInput");
+        const saveButton = document.getElementById("saveButton");
+        const getButton = document.getElementById("getButton");
+        const clearButton = document.getElementById("clearButton");
+        const output = document.getElementById("output");
+
+        saveButton.addEventListener("click",() =>{
+            const data = dataInput.value;
+    
+            localStorage.setItem("name",data);
+            
+        })
+        getButton.addEventListener("click",() =>{
+            const savedData = localStorage.getItem("name");
+            if (savedData){
+                output.textContent = savedData;
+            }
+            else{
+                output.textContent = "No element is there in the local storage"
+            }
+
+        })
+        clearButton.addEventListener("click",() =>{
+             localStorage.removeItem("name");
+             output.textContent = "Name removed from local storage.";
+        })
+
+    </script>
+</body>
+</html>
