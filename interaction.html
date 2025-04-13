@@ -4,7 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Test</title>
-    <script src="interaction.js" ></script>
+    <script>
+        // // Sum from 1 to 100 using a for loop
+        // let a = 0;
+        // for (let i = 0; i <= 100; i++) {
+        //     a += i;
+        // }
+
+        // // Sum from 1 to 100 using a while loop
+        // let j = 0;
+        // let newsum = 0;
+        // while (j <= 100) {
+        //     newsum += j;
+        //     j += 1;
+        // }
+
+        // // Sum from 1 to 100 using a do-while loop
+        // let i = 0;
+        // let sum = 0;
+        // do {
+        //     sum += i;
+        //     i++;
+        // } while (i <= 100);
+
+        // // Print results
+        // console.log("Sum using for loop:", a);
+        // console.log("Sum using while loop:", newsum);
+        // console.log("Sum using do-while loop:", sum);
+
+        // // Get number input for even numbers
+        // let num = prompt("Enter a number to print even numbers up to:");
+
+        //     for (let k = 0; k <= num; k++) { 
+        //         if (k % 2 === 0) {
+        //             console.log(k);
+        //         }
+        //     }
+
+        // function that prints all numbers from start to end
+        // let start=prompt("enter a number you want to start :");
+        // let end=prompt("enter a number you want to end with:");
+        // for (let i= start; i<=end;i++){
+        //     console.log(i);
+        // }
+
+        //  Sum of First N Natural Numbers
+        // let n=prompt("enter a number upto you want to add:");
+        // n= Number(n)
+        // sum=0
+        // for (let i=1;i<=n;i++){
+        //     sum+=i
+        //     console.log(sum)
+        // }
+
+        // Reverse a String
+        // let st= prompt("enter the string that you want to reverse:")
+        // for (let i=st.length-1;i>=0;i--){
+        //     console.log(st[i])
+        // }
+
+        // Check Prime Number
+        // let num=Number(prompt("enter the number you want to check whether is prime or not:"));
+        // if (num <2){
+        //     console.log(num,"false")
+        // } else{
+        //     for (let i=2; i<num;i++){
+        //         if (num%i===0){
+        //             console.log(num,"false")
+        //             break
+        //         }
+        //         else{
+        //             console.log(num,"true")
+        //         }
+        // }
+        // }
+
+        // Factorial of a Number
+        // let num=Number(prompt("enter a number :"))
+        // let fact=1
+        // for (let i=1;i<=num;i++){
+        //     fact*=i;
+        //     console.log(fact)
+        // }
+
+        // Print Fibonacci Series
+        // let num = Number(prompt("Enter the number of terms:"));
+        // let x = 0, y = 1, c;
+
+
+        // console.log(x);
+        // if (num > 1) console.log(y);
+
+        // for (let i = 2; i < num; i++) { 
+        //     c = x + y;  
+        //     console.log(c);  
+        //     x = y; 
+        //     y = c;  
+        // }
+
+        // Count Digits of a Number
+        // let num = Number(prompt("Enter a number:"));
+        // let count = 0;
+
+        // while (num > 0) {
+        //     count += 1;
+        //     num = Math.floor(num / 10);
+        //     console.log(num);
+        // }
+
+        // console.log("Number of digits:", count);
+
+        // Sum of Digits of a Number
+        // let num = Number(prompt("Enter a number:"));
+        // let sum=0;
+        // while (num>0){
+        //     sum+=num%10
+        //     num = Math.floor(num / 10);
+            
+        // }
+        // console.log(sum)
+
+        // 10. Count Vowels in a String
+        function countVowels(str) {
+            let count = 0;
+            let vowels = "aeiouAEIOU";
+
+            for (let i = 0; i < str.length; i++) {
+                for (let j = 0; j < vowels.length; j++) {
+                    if (str[i] === vowels[j]) {
+                        count++;
+                        break; // No need to check further if a match is found
+                    }
+                }
+            }
+            return count;
+        }
+
+        // Taking input from the user
+        let str = prompt("Enter a string:");
+        console.log("Number of vowels:", countVowels(str));
+
+    </script>
 </head>
 <body> 
     <h1>Check the console </h1>

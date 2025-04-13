@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="calling_name.js"></script>
+    <script>
+        var phno1 = { firstnumber:674587, secondnumber:5465};
+        var phno2 = {firstnumber: 43524, secondnumber:75673};
+
+        function invite(calling1, calling2){
+            console.log( calling1 + " "+this.firstnumber + ""+ this.secondnumber+ ","+ calling2);
+        }
+        var invitePhno1=invite.bind(phno1);
+        var invitePhone2=invite.bind(phno2)
+        invite.call(phno2, "Hi", "I am calling");
+        invite.apply(phno1,["Hi","this is ok "])
+        invitePhno1("hello","is this your number");
+        invitePhone2("hello","your number");
+    </script>
 </head>
 <body>
     

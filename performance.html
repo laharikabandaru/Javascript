@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="performance.js"></script>
+    <script>
+        function timeConsuming(){
+            let sum = 0;
+            for (let i = 0; i < 10000; i++ ){
+                sum += i;
+            }
+            console.log(sum);
+            
+        }
+        let start = performance.now();
+        timeConsuming();
+        let end = performance.now();
+        console.log(end - start);
+    </script>
 </head>
 <body>
     
